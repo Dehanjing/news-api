@@ -1,0 +1,33 @@
+{
+  "name": "@dhnapi/news-api",
+  "version": "1.0.0--beta-v",
+  "description": "Simple News-API scrapper library",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Dehanjing/news-api.git"
+  },
+  "keywords": [
+    "scrapper",
+    "news",
+    "api",
+    "news-api",
+    "dhn-api"
+  ],
+  "author": "Dehanjing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dehanjing/news-api/issues"
+  },
+  "homepage": "https://github.com/Dehanjing/news-api#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cheerio": "^1.0.0-rc.10"
+  }
+}
