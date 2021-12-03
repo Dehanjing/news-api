@@ -1,11 +1,7 @@
 module.exports = function(fn) {
   this.validate(fn);
-  axios.get(`https://m.antaranews.com/terkini`, {
-    method: 'GET',
-    headers: {
-      "User-Agent": "Mozilla/5.0 (Linux; Android 9; Redmi 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Mobile Safari/537.36",
-    }
-  }).then((response) => {
+  axios.get(`https://m.antaranews.com/terkini`, config)
+  .then((response) => {
     const hasil = [];
     const $ = cheerio.load(response.data);
     $('div.row.item').each(function(i, elem) {

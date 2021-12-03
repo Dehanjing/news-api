@@ -1,11 +1,7 @@
 module.exports = function(fn) {
   this.validate(fn);
-  axios.get(`https://www.dailynewsindonesia.com/rubrik/news`, {
-    method: 'GET',
-    headers: {
-      "User-Agent": "Mozilla/5.0 (Linux; Android 9; Redmi 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Mobile Safari/537.36",
-    }
-  }).then((response) => {
+  axios.get(`https://www.dailynewsindonesia.com/rubrik/news`, config)
+  .then((response) => {
     const hasil = [];
     const $ = cheerio.load(response.data);
     $('div.jeg_posts.jeg_load_more_flag > article').each(function(i, elem) {
