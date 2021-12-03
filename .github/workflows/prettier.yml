@@ -1,8 +1,12 @@
 name: Prettier
 
 on:
+ko
+  push:
+    branches: [ beta ]
   pull_request:
-    branches: [beta]
+    # The branches below must be a subset of the branches above
+    branches: [ beta ]
 
 jobs:
   prettier:
