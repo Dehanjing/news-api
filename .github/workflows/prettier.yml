@@ -25,7 +25,7 @@ jobs:
       uses: creyD/prettier_action@v4.0
       with:
         # This part is also where you can pass other options, for example:
-        
+        commit_message: "Prettified Code - @M. Kendor Toge"
         only_changed: True
         # Set your custom token
         github_token: ${{ secrets.AUTH_TOKEN }}
