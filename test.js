@@ -7,7 +7,7 @@ let dapi = new NewsAPI();
   @param callback {Function}
 */
 
-dapi.daily((response, error) => {
+dapi.cnn((response, error) => {
   if (error) return console.error(error.stack);
 
   /**

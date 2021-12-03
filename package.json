@@ -1,6 +1,6 @@
 {
   "name": "@dhnapi/news-api",
-  "version": "1.0.0--beta-v",
+  "version": "1.0.10--up-v",
   "description": "Simple News-API scrapper library",
   "main": "src/index.js",
   "scripts": {
