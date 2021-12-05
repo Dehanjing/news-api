@@ -3,7 +3,7 @@ module.exports = function(fn) {
   axios.get(`https://www.dailynewsindonesia.com/rubrik/news`, config)
   .then((response) => {
     const hasil = [];
-    const $ = cheerio.default.load(response.data);
+    const $ = cheerio.load(response.data);
     $('div.jeg_posts.jeg_load_more_flag > article').each(function(i, elem) {
       hasil.push({
         title: $(this).find('h3.jeg_post_title').text().trim(),

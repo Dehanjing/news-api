@@ -58,7 +58,7 @@ dapi.cnn((response, error) => {
    if (error) return console.error(error.stack);
    
    /**
-    * @return response {Object}
+    * @return {Object} response
     * @object AxiosResponse
    **/
    
