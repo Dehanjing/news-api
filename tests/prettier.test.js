@@ -6,7 +6,7 @@ let c = {
   b: b,
   d: {
     a,
-    b
+    b,
   },
   c: "abc",
 };

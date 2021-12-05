@@ -8,14 +8,16 @@ class NewsApi {
     global.config = {
       method: "GET",
       headers: {
-        "Creator": "M. Kendor Toge",
-        "User-Agent": "Mozilla/5.0 (Linux; Android 9; Redmi 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Mobile Safari/537.36",
-      }
+        Creator: "M. Kendor Toge",
+        "User-Agent":
+          "Mozilla/5.0 (Linux; Android 9; Redmi 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Mobile Safari/537.36",
+      },
     };
     this._plugins = [];
     this.creator = "M. Kendor Toge";
-    this.validate = function(fn) {
-      if (typeof fn != "function") throw new TypeError("typeof callback must be a function");
+    this.validate = function (fn) {
+      if (typeof fn != "function")
+        throw new TypeError("typeof callback must be a function");
       return;
     };
     fs.readdirSync(__dirname + "/lib/").forEach((plugins) => {
@@ -29,7 +31,7 @@ class NewsApi {
   plugins() {
     return {
       plugins: this._plugins,
-      total: this._plugins.length
+      total: this._plugins.length,
     };
   }
 }
