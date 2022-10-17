@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/Dehanjing/news-api#readme",
   "dependencies": {
-    "axios": "^0.24.0",
+    "axios": "^1.1.3",
     "cheerio": "^1.0.0-rc.10"
   }
 }
